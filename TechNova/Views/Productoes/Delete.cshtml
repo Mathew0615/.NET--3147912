@@ -1,0 +1,28 @@
+﻿@model TechNova.Models.Producto
+@{
+    ViewData["Title"] = "Eliminar Producto";
+}
+
+<div class="container mt-4">
+    <h1 class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> Eliminar Producto</h1>
+    <hr />
+
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">¿Está seguro que desea eliminar este producto?</h4>
+        <p>Esta acción no se puede deshacer.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Nombre)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Nombre)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Descripcion)</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Descripcion)</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Precio)</dt>
+                <dd class="col-sm-9">@Model.Precio.ToString("C")</dd>
+
+                <dt class="col-sm-3">@Html.DisplayNameFor(model => model.Stock)</dt>
+                <dd class="col-sm-9">

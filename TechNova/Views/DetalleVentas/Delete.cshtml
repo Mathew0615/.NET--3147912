@@ -1,0 +1,62 @@
+﻿@model TechNova.Models.DetalleVenta
+@{
+    ViewData["Title"] = "Eliminar Detalle";
+}
+
+<div class="container mt-4">
+    <h1 class="text-danger">Eliminar Detalle de Venta</h1>
+    <hr />
+
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">¿Está seguro que desea eliminar este detalle?</h4>
+        <p>Esta acción no se puede deshacer.</p>
+        <p class="mb-0"><strong>⚠️ Advertencia:</strong> Esto afectará el total de la venta asociada.</p>
+    </div>
+
+    <div class="card">
+        <div class="card-header bg-info text-white">
+            <h5>Información del Detalle</h5>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">ID Detalle:</dt>
+                <dd class="col-sm-9"><strong>@Model.DetalleId</strong></dd>
+
+                <dt class="col-sm-3">Venta #:</dt>
+                <dd class="col-sm-9">
+                    <a asp-controller="Ventas" asp-action="Details" asp-route-id="@Model.VentaId"
+                       class="badge bg-primary">#@Model.VentaId</a>
+                </dd>
+
+                <dt class="col-sm-3">Producto:</dt>
+                <dd class="col-sm-9">
+                    <strong>@Model.Producto.Nombre</strong><br />
+                    <small class="text-muted">@Model.Producto.Descripcion</small>
+                </dd>
+
+                <dt class="col-sm-3">Cantidad:</dt>
+                <dd class="col-sm-9">
+                    <span class="badge bg-success">@Model.Cantidad unidades</span>
+                </dd>
+
+                <dt class="col-sm-3">Precio Unitario:</dt>
+                <dd class="col-sm-9">@Model.PrecioUnitario.ToString("C")</dd>
+
+                <dt class="col-sm-3">Subtotal:</dt>
+                <dd class="col-sm-9">
+                    <strong class="text-success">@((Model.Cantidad * Model.PrecioUnitario).ToString("C"))</strong>
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-3" onsubmit="return confirm('⚠️ ¿Está completamente seguro de eliminar este detalle? Esta acción es permanente.');">
+        <input type="hidden" asp-for="DetalleId" />
+        <button type="submit" class="btn btn-danger btn-lg">
+            Confirmar Eliminación
+        </button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg">
+            Cancelar
+        </a>
+    </form>
+</div>

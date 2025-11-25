@@ -1,0 +1,148 @@
+﻿@model TechNova.Models.Venta
+@{
+    ViewData["Title"] = "Nueva Venta";
+}
+
+<div class="container mt-4">
+    <h1><i class="bi bi-cart-plus-fill"></i> Registrar Nueva Venta</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <form asp-action="Create" method="post" id="ventaForm">
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <!-- Seleccionar Cliente -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Cliente *</strong></label>
+                            <select name="ClienteId" class="form-select" required>
+                                <option value="">-- Seleccione un cliente --</option>
+                                @foreach (var cliente in ViewBag.ClienteId as SelectList)
+                                {
+                                    <option value="@cliente.Value">@cliente.Text</option>
+                                }
+                            </select>
+                        </div>
+
+                        <hr />
+                        <h5><i class="bi bi-box-seam"></i> Productos a Vender</h5>
+
+                        <!-- Contenedor de productos -->
+                        <div id="productosContainer">
+                            <div class="producto-item border p-3 mb-3 rounded">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <label class="form-label">Producto *</label>
+                                        <select name="ProductoIds" class="form-select producto-select" required>
+                                            <option value="">-- Seleccione un producto --</option>
+                                            @foreach (var producto in ViewBag.Productos as SelectList)
+                                            {
+                                                <option value="@producto.Value">@producto.Text</option>
+                                            }
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Cantidad *</label>
+                                        <input type="number" name="Cantidades" class="form-control" min="1" value="1" required />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón para agregar más productos -->
+                        <button type="button" class="btn btn-secondary mb-3" onclick="agregarProducto()">
+                            <i class="bi bi-plus-circle"></i> Agregar Otro Producto
+                        </button>
+
+                        <hr />
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <button type="submit" class="btn btn-success btn-lg">
+                                <i class="bi bi-check-circle"></i> Registrar Venta
+                            </button>
+                            <a asp-action="Index" class="btn btn-secondary btn-lg">
+                                <i class="bi bi-x-circle"></i> Cancelar
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Panel de ayuda -->
+        <div class="col-md-4">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-info-circle-fill text-info"></i> Información</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle text-success"></i>
+                            Seleccione el cliente que realizará la compra
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle text-success"></i>
+                            Agregue los productos y cantidades
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-check-circle text-success"></i>
+                            El stock se actualizará automáticamente
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-exclamation-triangle text-warning"></i>
+                            No se permiten ventas sin stock suficiente
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        function agregarProducto() {
+            const container = document.getElementById('productosContainer');
+            const productosHTML = `@Html.Raw(String.Join("", ((SelectList)ViewBag.Productos).Select(p => $"<option value='{p.Value}'>{p.Text}</option>")))`;
+
+            const nuevoProducto = document.createElement('div');
+            nuevoProducto.className = 'producto-item border p-3 mb-3 rounded position-relative';
+            nuevoProducto.innerHTML = `
+                <button type="button" class="btn btn-danger btn-sm position-absolute top-0 end-0 m-2" onclick="eliminarProducto(this)">
+                    <i class="bi bi-x"></i>
+                </button>
+                <div class="row">
+                    <div class="col-md-8">
+                        <label class="form-label">Producto *</label>
+                        <select name="ProductoIds" class="form-select producto-select" required>
+                            <option value="">-- Seleccione un producto --</option>
+                            ${productosHTML}
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Cantidad *</label>
+                        <input type="number" name="Cantidades" class="form-control" min="1" value="1" required />
+                    </div>
+                </div>
+            `;
+
+            container.appendChild(nuevoProducto);
+        }
+
+        function eliminarProducto(btn) {
+            const productoItem = btn.closest('.producto-item');
+            const container = document.getElementById('productosContainer');
+
+            if (container.children.length > 1) {
+                productoItem.remove();
+            } else {
+                alert('Debe mantener al menos un producto en la venta');
+            }
+        }
+    </script>
+}

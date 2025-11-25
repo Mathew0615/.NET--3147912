@@ -1,0 +1,73 @@
+﻿@model TechNova.Models.Venta
+@{
+    ViewData["Title"] = "Eliminar Venta";
+}
+
+<div class="container mt-4">
+    <h1 class="text-danger"><i class="bi bi-exclamation-triangle-fill"></i> Eliminar Venta</h1>
+    <hr />
+
+    <div class="alert alert-warning" role="alert">
+        <h4 class="alert-heading">¿Está seguro que desea eliminar esta venta?</h4>
+        <p>Esta acción no se puede deshacer y se eliminarán todos los detalles de la venta.</p>
+        <p class="mb-0"><strong>⚠️ Nota:</strong> El stock de los productos NO se restaurará automáticamente.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5>Información de la Venta</h5>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-4">ID Venta:</dt>
+                        <dd class="col-sm-8"><strong>#@Model.VentaId</strong></dd>
+
+                        <dt class="col-sm-4">Fecha:</dt>
+                        <dd class="col-sm-8">@Model.FechaVenta.ToString("dd/MM/yyyy HH:mm")</dd>
+
+                        <dt class="col-sm-4">Cliente:</dt>
+                        <dd class="col-sm-8">@Model.Cliente.Nombre</dd>
+
+                        <dt class="col-sm-4">Email:</dt>
+                        <dd class="col-sm-8">@Model.Cliente.Email</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    <h5>Productos Vendidos</h5>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group">
+                        @foreach (var detalle in Model.DetalleVenta)
+                        {
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span>@detalle.Producto.Nombre (x@detalle.Cantidad)</span>
+                                <strong>@((detalle.Cantidad * detalle.PrecioUnitario).ToString("C"))</strong>
+                            </li>
+                        }
+                    </ul>
+                    <hr />
+                    <div class="text-end">
+                        <h4>Total: <span class="text-success">@ViewBag.Total.ToString("C")</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form asp-action="Delete" class="mt-4" onsubmit="return confirm('⚠️⚠️⚠️ ¿ESTÁ COMPLETAMENTE SEGURO de eliminar esta venta? Esta acción es PERMANENTE y eliminará todos los detalles asociados.');">
+        <input type="hidden" asp-for="VentaId" />
+        <button type="submit" class="btn btn-danger btn-lg">
+            <i class="bi bi-trash"></i> Confirmar Eliminación Definitiva
+        </button>
+        <a asp-action="Index" class="btn btn-secondary btn-lg">
+            <i class="bi bi-arrow-left"></i> Cancelar y Volver
+        </a>
+    </form>
+</div>
