@@ -1,0 +1,8 @@
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\bin\Debug\EstructurasdeControl.exe.config
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\bin\Debug\EstructurasdeControl.exe
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\bin\Debug\EstructurasdeControl.pdb
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\obj\Debug\EstructurasdeControl.csproj.AssemblyReference.cache
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\obj\Debug\EstructurasdeControl.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\obj\Debug\EstructurasdeControl.csproj.CoreCompileInputs.cache
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\obj\Debug\EstructurasdeControl.exe
+C:\Users\Sena\source\repos\Ficha_3147912\EstructurasdeControl\EstructurasdeControl\obj\Debug\EstructurasdeControl.pdb
