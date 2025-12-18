@@ -1,0 +1,89 @@
+﻿@model SistemaSeguridad.Models.ViewModels.ManageRolePermissionsViewModel
+
+@{
+    ViewData["Title"] = "Gestionar Permisos";
+}
+
+<h2>Gestionar Permisos - @Model.RoleName</h2>
+
+@if (Model.OnlyAddMode)
+{
+    <div class="alert alert-warning">
+        Estás modificando el rol <strong>Administrador</strong>.
+        En este modo solo puedes <strong>agregar</strong> permisos nuevos; no se permite quitar permisos existentes.
+    </div>
+}
+
+<form asp-action="ManagePermissions" method="post">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" asp-for="RoleId" />
+    <input type="hidden" asp-for="RoleName" />
+    <input type="hidden" asp-for="OnlyAddMode" />
+
+    <div class="card">
+        <div class="card-body">
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Permiso</th>
+                        <th style="width: 160px;">Asignado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Permissions.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                <input type="hidden" asp-for="Permissions[i].Name" />
+                                <input type="hidden" asp-for="Permissions[i].DisplayName" />
+                                <input type="hidden" asp-for="Permissions[i].IsLocked" />
+
+                                @(Model.Permissions[i].DisplayName ?? Model.Permissions[i].Name)
+
+                                @if (Model.Permissions[i].IsLocked)
+                                {
+                                    <span class="badge bg-secondary ms-2">Fijo</span>
+                                }
+                            </td>
+                            <td>
+                                @* ✅ Si está locked: checkbox marcado + disabled + hidden true para que viaje en el POST *@
+                                @if (Model.Permissions[i].IsLocked)
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               checked="checked"
+                                               disabled="disabled" />
+
+                                        <label class="form-check-label">Sí</label>
+
+                                        <input type="hidden"
+                                               name="Permissions[@i].IsSelected"
+                                               value="true" />
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="form-check">
+                                        <input class="form-check-input"
+                                               type="checkbox"
+                                               asp-for="Permissions[i].IsSelected" />
+
+                                        <label class="form-check-label" asp-for="Permissions[i].IsSelected">
+                                            Sí
+                                        </label>
+                                    </div>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <button type="submit" class="btn btn-primary">Guardar cambios</button>
+            <a asp-action="Index" class="btn btn-secondary">Volver</a>
+        </div>
+    </div>
+</form>

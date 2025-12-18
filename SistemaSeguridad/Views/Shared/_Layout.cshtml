@@ -1,0 +1,146 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chocoAdmin - @ViewData["Title"]</title>
+
+    <!-- Bootstrap (por defecto del template MVC) -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+    <!-- CSS del sitio -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SistemaSeguridad.styles.css" asp-append-version="true" />
+
+    <!-- Bootstrap Icons (para los íconos bi bi-...) -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+<body class="bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger border-bottom shadow-sm">
+            <div class="container">
+                <!-- BRAND chocoAdmin -->
+                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-cup-hot me-1"></i> chocoAdmin
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Menú izquierdo -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door"></i> Inicio
+                            </a>
+                        </li>
+
+                        @* Zona compartida y Productos para usuarios autenticados *@
+                        @if (User.Identity != null && User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Productos" asp-action="Index">
+                                    <i class="bi bi-basket"></i> Productos
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="ZonaCompartida" asp-action="Index">
+                                    <i class="bi bi-people"></i> Zona compartida
+                                </a>
+                            </li>
+                        }
+
+                        @* Menú de seguridad solo para Administrador *@
+                        @if (User.Identity != null && User.Identity.IsAuthenticated && User.IsInRole("Administrador"))
+                        {
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="seguridadDropdown"
+                                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-shield-lock"></i> Seguridad
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="seguridadDropdown">
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Roles" asp-action="Index">
+                                            <i class="bi bi-shield-check me-1"></i> Roles
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Users" asp-action="Index">
+                                            <i class="bi bi-people me-1"></i> Usuarios
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+                    </ul>
+
+                    <!-- Menú derecho: usuario / login -->
+                    <ul class="navbar-nav ms-auto">
+                        @if (SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item d-flex align-items-center me-2 text-white-50 small">
+                                <i class="bi bi-person-circle me-1"></i>
+                                @User.Identity!.Name
+                            </li>
+                            <li class="nav-item">
+                                <form class="d-inline" asp-area="Identity" asp-page="/Account/Logout"
+                                      asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })"
+                                      method="post">
+                                    <button type="submit" class="btn btn-outline-light btn-sm">
+                                        <i class="bi bi-box-arrow-right"></i> Cerrar sesión
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-outline-light btn-sm me-2"
+                                   asp-area="Identity" asp-page="/Account/Login">
+                                    <i class="bi bi-box-arrow-in-right"></i> Iniciar sesión
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-light btn-sm text-danger fw-semibold"
+                                   asp-area="Identity" asp-page="/Account/Register">
+                                    <i class="bi bi-person-plus"></i> Registrarse
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top py-3 bg-white">
+        <div class="container d-flex justify-content-between small text-muted">
+            <span>chocoAdmin &copy; @DateTime.Now.Year</span>
+            <span>Desarrollado con ASP.NET Core MVC + Identity</span>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

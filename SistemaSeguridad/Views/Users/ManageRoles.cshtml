@@ -1,0 +1,81 @@
+﻿@model SistemaSeguridad.Models.ViewModels.ManageUserRolesViewModel
+
+@{
+    ViewData["Title"] = "Gestionar roles del usuario";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-primary text-white">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-shield-lock me-2 fs-5"></i>
+                        <div>
+                            <h5 class="mb-0">Gestionar roles del usuario</h5>
+                            <small class="text-white-50">
+                                Asigna o quita roles para controlar el acceso a módulos del sistema.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <div class="mb-4 p-3 rounded bg-light">
+                        <div class="fw-semibold mb-1">@Model.Email</div>
+                        <div class="text-muted small">
+                            Usuario: @Model.UserName<br />
+                            Id: <code>@Model.UserId</code>
+                        </div>
+                    </div>
+
+                    <form asp-action="ManageRoles" method="post">
+                        <input type="hidden" asp-for="UserId" />
+
+                        <div class="table-responsive mb-3">
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Rol</th>
+                                        <th class="text-center">Asignado</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < Model.Roles.Count; i++)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @Model.Roles[i].RoleName
+                                                <input type="hidden" asp-for="Roles[@i].RoleName" />
+                                                <input type="hidden" asp-for="Roles[@i].RoleId" />
+                                            </td>
+                                            <td class="text-center">
+                                                <input class="form-check-input" asp-for="Roles[@i].IsSelected" />
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a asp-action="Index" class="btn btn-outline-secondary">
+                                Cancelar
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-check2-circle"></i> Guardar cambios
+                            </button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

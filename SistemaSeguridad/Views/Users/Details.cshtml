@@ -1,0 +1,104 @@
+﻿@model SistemaSeguridad.Models.ViewModels.UserViewModel
+
+@{
+    ViewData["Title"] = "Detalles del usuario";
+}
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-5 mb-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-light">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle bg-primary bg-opacity-10 d-flex align-items-center justify-content-center me-3" style="width: 40px; height: 40px;">
+                            <i class="bi bi-person-circle text-primary fs-5"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-0">Información del usuario</h5>
+                            <small class="text-muted">Datos generales de la cuenta seleccionada.</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">Id</dt>
+                        <dd class="col-sm-8"><code>@Model.Id</code></dd>
+
+                        <dt class="col-sm-4">Correo</dt>
+                        <dd class="col-sm-8">@Model.Email</dd>
+
+                        <dt class="col-sm-4">Usuario</dt>
+                        <dd class="col-sm-8">@Model.UserName</dd>
+
+                        <dt class="col-sm-4">Correo confirmado</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.EmailConfirmed)
+                            {
+                                <span class="badge bg-success-subtle border border-success-subtle text-success">Sí</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-secondary-subtle border border-secondary-subtle text-secondary">No</span>
+                            }
+                        </dd>
+
+                        <dt class="col-sm-4">Bloqueado</dt>
+                        <dd class="col-sm-8">
+                            @if (Model.IsLockedOut)
+                            {
+                                <span class="badge bg-danger-subtle border border-danger-subtle text-danger">
+                                    Sí
+                                </span>
+                                <div class="small text-muted">
+                                    Hasta: @Model.LockoutEnd?.LocalDateTime.ToString("g")
+                                </div>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success-subtle border border-success-subtle text-success">No</span>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer bg-white d-flex justify-content-end gap-2">
+                    <a asp-action="ManageRoles" asp-route-id="@Model.Id" class="btn btn-primary btn-sm">
+                        <i class="bi bi-shield-lock"></i> Gestionar roles
+                    </a>
+                    <a asp-action="Index" class="btn btn-outline-secondary btn-sm">
+                        Volver
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7 mb-3">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">
+                        <i class="bi bi-shield-check me-2"></i>Roles asignados
+                    </h5>
+                </div>
+                <div class="card-body">
+                    @if (!Model.Roles.Any())
+                    {
+                        <div class="text-muted text-center py-4">
+                            <i class="bi bi-shield-slash fs-1 d-block mb-2"></i>
+                            Este usuario no tiene roles asignados.
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="d-flex flex-wrap gap-2">
+                            @foreach (var role in Model.Roles)
+                            {
+                                <span class="badge bg-primary-subtle border border-primary-subtle text-primary">
+                                    @role
+                                </span>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

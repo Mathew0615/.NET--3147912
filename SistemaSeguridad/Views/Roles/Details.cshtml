@@ -1,0 +1,58 @@
+﻿@model SistemaSeguridad.Models.ViewModels.RoleViewModel
+@using Microsoft.AspNetCore.Identity
+
+<div class="container py-4">
+    <div class="row">
+        <div class="col-lg-5">
+
+            <div class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Información del rol</h5>
+                </div>
+                <div class="card-body">
+                    <p><strong>Nombre:</strong> @Model.Name</p>
+                    <p><strong>Usuarios asignados:</strong> @Model.UsersCount</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-7">
+
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Usuarios con este rol</h5>
+                </div>
+                <div class="card-body">
+
+                    @if (!ViewBag.Users.Any())
+                    {
+                        <p class="text-muted">No hay usuarios asignados.</p>
+                    }
+                    else
+                    {
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Correo</th>
+                                    <th>Usuario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in ViewBag.Users)
+                                {
+                                    <tr>
+                                        <td>@user.Email</td>
+                                        <td>@user.UserName</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

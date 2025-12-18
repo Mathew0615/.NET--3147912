@@ -1,0 +1,596 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\managepermissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\managepermissions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\permissionselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\permissionselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\managerolepermissionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\managerolepermissionsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\userviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\roleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\roleselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\roleselectionviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\viewmodels\\manageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\viewmodels\\manageuserrolesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Migrations\\20251215142906_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SistemaSeguridad\\Migrations\\20251215142906_inicial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\shared\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\security\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\security\\applicationuserclaimsprincipalfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\productos\\detelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\productos\\detelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\productos\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\productos\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\productos\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\productos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\models\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\roles\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\security\\permissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\security\\permissions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\data\\seed\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\data\\seed\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\users\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\users\\manageroles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\views\\users\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|c:\\users\\mateo\\source\\repos\\sistemaseguridad\\sistemaseguridad\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A3E4022A-81EF-D4FC-DD67-FBDDB42A026E}|SistemaSeguridad\\SistemaSeguridad.csproj|solutionrelative:sistemaseguridad\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\UserViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\UserViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\UserViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\UserViewModel.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAiwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:19:13.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ManageRolePermissionsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\ManageRolePermissionsViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\ManageRolePermissionsViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\ManageRolePermissionsViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\ManageRolePermissionsViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:52:10.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PermissionSelectionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\PermissionSelectionViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\PermissionSelectionViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\PermissionSelectionViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\PermissionSelectionViewModel.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:51:51.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManagePermissions.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\ManagePermissions.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\ManagePermissions.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\ManagePermissions.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\ManagePermissions.cshtml",
+              "ViewState": "AgIAACIAAAAANjMzMzP7v1kAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:59:41.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RoleViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\RoleViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\RoleViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\RoleViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\RoleViewModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAywBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:54:37.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RoleSelectionViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\RoleSelectionViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\RoleSelectionViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\RoleSelectionViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\RoleSelectionViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:19:33.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ManageUserRolesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\ManageUserRolesViewModel.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\ViewModels\\ManageUserRolesViewModel.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\ViewModels\\ManageUserRolesViewModel.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\ViewModels\\ManageUserRolesViewModel.cs",
+              "ViewState": "AgIAAAsAAABQZmZmZuY9wBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:41:38.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Controllers\\RolesController.cs",
+              "ViewState": "AgIAAEUBAAAAAAAAAAAAAFgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:26:46.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAqwJEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T05:06:41.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAAAOkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:27:11.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20251215142906_inicial.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Migrations\\20251215142906_inicial.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Migrations\\20251215142906_inicial.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Migrations\\20251215142906_inicial.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Migrations\\20251215142906_inicial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-15T14:29:06.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\appsettings.json",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\appsettings.json",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\appsettings.json",
+              "RelativeToolTip": "SistemaSeguridad\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-10T20:52:06.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Program.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Program.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Program.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T20:48:53.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\appsettings.Development.json",
+              "RelativeToolTip": "SistemaSeguridad\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-15T02:13:19.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAIAAAAAa2ZmZmYUwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:38:52.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AccessDenied.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Shared\\AccessDenied.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Shared\\AccessDenied.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Shared\\AccessDenied.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:13:24.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationUserClaimsPrincipalFactory.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Security\\ApplicationUserClaimsPrincipalFactory.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Security\\ApplicationUserClaimsPrincipalFactory.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Security\\ApplicationUserClaimsPrincipalFactory.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Security\\ApplicationUserClaimsPrincipalFactory.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T05:23:11.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Detelete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Detelete.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Productos\\Detelete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Detelete.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Productos\\Detelete.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:08:46.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Details.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Productos\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Details.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Productos\\Details.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:08:26.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Productos\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Edit.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Productos\\Edit.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:08:04.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Create.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Productos\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Create.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Productos\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:07:47.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Productos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Productos\\Index.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Productos\\Index.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAgwFkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T05:07:31.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Models\\Producto.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T05:05:21.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Edit.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\Edit.cshtml",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:35:29.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Index.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\Index.cshtml",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAgwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:34:56.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Create.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\Create.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Create.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\Create.cshtml",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:35:14.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T20:48:33.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Delete.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Delete.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\Delete.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:35:43.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Details.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Roles\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Roles\\Details.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Roles\\Details.cshtml",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:36:09.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Permissions.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Security\\Permissions.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Security\\Permissions.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Security\\Permissions.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Security\\Permissions.cs",
+              "ViewState": "AgIAAAoAAAAA4JiZmZm5vyEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T04:50:54.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Data\\Seed\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Data\\Seed\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Data\\Seed\\DbInitializer.cs",
+              "RelativeToolTip": "SistemaSeguridad\\Data\\Seed\\DbInitializer.cs",
+              "ViewState": "AgIAAFoAAABg/////38wwCcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T03:43:54.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Users\\Index.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwIEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:36:36.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ManageRoles.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\ManageRoles.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Users\\ManageRoles.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\ManageRoles.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Users\\ManageRoles.cshtml",
+              "ViewState": "AgIAADoAAACAMzMzMzMqwEcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:37:44.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\Details.cshtml",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\Views\\Users\\Details.cshtml",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\Views\\Users\\Details.cshtml",
+              "RelativeToolTip": "SistemaSeguridad\\Views\\Users\\Details.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAgwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-11T04:37:31.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "SistemaSeguridad\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\mateo\\source\\repos\\SistemaSeguridad\\SistemaSeguridad\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "SistemaSeguridad\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-12-10T20:55:17.84Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{56df62a4-05a3-4e5b-aa1a-99371ccfb997}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+﻿@model SistemaSeguridad.Models.Producto
+
+@{
+    ViewData["Title"] = "Detalle del producto";
+}
+
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-6">
+
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0">Detalle del producto</h5>
+                </div>
+                <div class="card-body">
+
+                    <dl class="row">
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.Nombre)</dt>
+                        <dd class="col-sm-8">@Model.Nombre</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.Descripcion)</dt>
+                        <dd class="col-sm-8">@Model.Descripcion</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.Precio)</dt>
+                        <dd class="col-sm-8">@Model.Precio.ToString("C")</dd>
+
+                        <dt class="col-sm-4">@Html.DisplayNameFor(m => m.Activo)</dt>
+                        <dd class="col-sm-8">
+                            @(Model.Activo ? "Sí" : "No")
+                        </dd>
+                    </dl>
+
+                    <div class="d-flex justify-content-end">
+                        <a asp-action="Index" class="btn btn-outline-secondary me-2">Volver</a>
+
+                        @if (User.HasClaim("permission", SistemaSeguridad.Security.Permissions.Productos_Editar))
+                        {
+                            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning btn-sm me-2">Editar</a>
+                        }
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
